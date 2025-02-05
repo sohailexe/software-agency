@@ -7,9 +7,31 @@ export default {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        primary: "2.25rem",
+        secondary: "1.62",
+        default: "2.25rem",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "#3D63EA", // Default primary color
+        },
+        secondary: "#ffed4a",
+        dark: {
+          DEFAULT: "#1A202C", // Default dark color
+          200: "#4A5568", // Lighter shade of dark
+        },
+        light: {
+          DEFAULT: "#E7DAED", // Default light color
+          200: "#F9F9FF",
+        },
+      },
+      fontFamily: {
+        display: ["Inter", "s"],
+        body: ["Inter", "s"],
+      },
+      boxShadow: {
+        box: "0px 4px 40px rgba(0, 0, 0, 0.1)",
       },
     },
   },

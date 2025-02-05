@@ -1,21 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Base Styles */
+@layer base {
+  h1 {
+    @apply text-dark text-4xl font-bold leading-[55px];
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h2 {
+    @apply text-dark text-[20px] font-semibold;
+  }
+  p {
+    @apply text-dark-200 leading-primary;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Utilities */
+@layer utilities {
+  /* Wraper */
+  .wrap1{
+    @apply max-w-[1200px] mx-auto px-4;
+  }
+  /* Gradients */
+  .g1 {
+    background: linear-gradient(to right, #57007b, #f76680);
+  }
+  .g2 {
+    background: linear-gradient(to top right, #57007b, #6675f7);
+  }
+  .g3 {
+    background: linear-gradient(to top right, #57007b, #f76680);
+  }
+
+  /* Typography */
+  .gradientText {
+    background: linear-gradient(to right, #de4396, #f76680);
+    @apply bg-clip-text text-transparent;
+  }
+  .para1 {
+    @apply leading-primary text-[18px];
+  }
+  .para2 {
+    @apply leading-secondary text-[14px];
+  }
+}
+
+
+
+
+
+
+
+/* styles.css */
+.custom-swiper .swiper-pagination {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.custom-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #ddd;
+  opacity: 1;
+  margin: 0 8px !important;
+  transition: all 0.3s ease;
+}
+
+.custom-swiper .swiper-pagination-bullet:hover {
+  transform: scale(1.2);
+  background: #999;
+}
+
+.custom-swiper .swiper-pagination-bullet-active {
+ background: linear-gradient(to top right, #57007b, #f76680) !important;
+  width: 30px;
+  border-radius: 6px;
 }
