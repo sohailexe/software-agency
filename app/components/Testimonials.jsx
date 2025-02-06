@@ -106,7 +106,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="border py-12">
+    <section className="py-12">
       <div className="wrap1 relative flex flex-col items-center overflow-hidden text-center">
         <span className="g1 mb-3 inline-block h-[4px] w-[60px] rounded-2xl"></span>
 
@@ -126,7 +126,7 @@ const Testimonials = () => {
               className="max-w-[535px] px-14 text-center md:px-6"
             >
               <Image
-                className="absolute -left-9"
+                className="absolute left-6 md:-left-9"
                 src="/comma.png"
                 width={12}
                 height={12}
@@ -134,7 +134,7 @@ const Testimonials = () => {
               />
               {testimonials[activeIndex]?.comment}
               <Image
-                className="absolute bottom-0 right-0 scale-x-[-1] transform"
+                className="absolute bottom-0 right-0 -translate-x-8 -translate-y-5 scale-x-[-1] transform md:translate-x-0 md:translate-y-0"
                 src="/comma.png"
                 width={12}
                 height={12}
@@ -193,7 +193,7 @@ const TestimonialCard = ({ testimonial }) => {
       className={clsx(
         "rounded-xl bg-white p-6 shadow-none transition-all duration-300",
         {
-          "scale-100 opacity-100 shadow-2xl": swiperSlide.isActive,
+          "shadow-box scale-100 opacity-100": swiperSlide.isActive,
           "scale-90 opacity-60": swiperSlide.isPrev || swiperSlide.isNext,
           "opacity-0":
             !swiperSlide.isActive && !swiperSlide.isPrev && !swiperSlide.isNext,

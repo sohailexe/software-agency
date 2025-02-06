@@ -47,10 +47,10 @@ export default () => {
     },
   ];
   return (
-    <section className="py-5 bg-light-200 shadow-lg">
+    <section className="bg-light-200 py-5 shadow-md">
       <h1 className="text-center">Services we offer</h1>
       <Swiper
-        className="my-6 px-2 custom-swiper"
+        className="custom-swiper my-6 px-2"
         modules={[Pagination, Autoplay]}
         spaceBetween={50}
         slidesPerView={3}
@@ -82,19 +82,19 @@ export default () => {
         {services.map((service, index) => (
           <SwiperSlide
             key={index}
-            className="rounded-md before1 px-5 w-[350px] my-1 mx-1 transition-all duration-300 py-7 shadow-xl"
+            className="before1 mx-1 my-1 w-[350px] rounded-md px-5 py-7 shadow-xl transition-all duration-300"
           >
-            <div className="size-16 rounded-full g3 bg-primary-500 text-white">
+            <div className="g3 bg-primary-500 size-16 rounded-full text-white">
               <Image
-                className="p1 rounded-full size-16 p-[1px] "
+                className="p1 size-16 rounded-full p-[1px]"
                 src={"/logo.jpg"}
                 alt="logo"
                 width={50}
                 height={50}
               />
             </div>
-            <h2 className="text-left mt-4">{service.title}</h2>
-            <p className="text-left  mt-4">{service.description}</p>
+            <h2 className="mt-4 text-left">{service.title}</h2>
+            <p className="mt-4 text-left">{service.description}</p>
           </SwiperSlide>
         ))}
       </Swiper>

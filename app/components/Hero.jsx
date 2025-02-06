@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const Hero = () => {
   return (
-    <section className="relative mx-auto flex flex-col-reverse justify-center gap-3 overflow-hidden px-5 py-10 shadow-md md:flex-row md:px-14 md:py-20 md:pb-28">
+    <section className="relative mx-auto flex flex-col-reverse justify-center gap-3 overflow-hidden px-5 py-10 md:flex-row md:px-14 md:py-20 md:pb-28">
       <div className="pt-10 text-center md:max-w-[500px] md:text-left">
         <h1 className="text-[45px] font-light leading-[71px]">
           Great <span className="gradientText font-bold">Product</span> is{" "}

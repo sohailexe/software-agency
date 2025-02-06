@@ -25,7 +25,7 @@ const ClientSwiper = () => {
   ];
 
   return (
-    <div className="py-10">
+    <div className="bg-light-200 shadow-box py-10">
       {/* Navigation buttons */}
       <div className="wrap1 relative">
         <div className="absolute -top-28 right-8 z-10 flex gap-4">
