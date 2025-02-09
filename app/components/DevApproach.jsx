@@ -47,7 +47,7 @@ const contentVariants = {
 
 const DevApproach = () => {
   return (
-    <section className="wrap1 relative py-20">
+    <section className="wrap1 relative bg-[#F7F7FA] py-20">
       <header className="relative flex flex-col items-center overflow-hidden pb-20 text-center">
         <span className="g1 bg-primary mb-3 inline-block h-[4px] w-[60px] rounded-2xl"></span>
         <h1 className="w-full whitespace-pre-line text-center text-4xl first-line:font-light">

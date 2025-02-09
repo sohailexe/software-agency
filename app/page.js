@@ -10,6 +10,8 @@ import TestimonialCarousel from "./components/Testimonials";
 import CaseStudies from "./components/CaseStudies";
 import Procedure from "./components/Procedure";
 import DevApproach from "./components/DevApproach";
+import TechStack from "./components/TechStack";
+
 config.autoAddCss = false; // Prevent Font Awesome from adding its CSS automatically
 
 export default function Home() {
@@ -25,6 +27,7 @@ export default function Home() {
       <CaseStudies />
       <Procedure />
       <DevApproach />
+      <TechStack />
       <div className="wrap1 h-96 border py-14 pb-20"></div>
     </>
   );

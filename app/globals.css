@@ -87,10 +87,15 @@
   .g3 {
     background: linear-gradient(to top right, #57007b, #f76680);
   }
+    .g4 {
+    background: linear-gradient(to right , #8209b7, #f76680);
+  }
+  
+  
 
   /* Typography */
   .gradientText {
-    background: linear-gradient(to right, #de4396, #f76680);
+    background: linear-gradient(to right, #57007b, #f76680);
     @apply bg-clip-text text-transparent;
   }
   .para1 {
