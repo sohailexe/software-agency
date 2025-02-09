@@ -106,7 +106,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="py-12">
+    <section className="py-12 pb-28">
       <div className="wrap1 relative flex flex-col items-center overflow-hidden text-center">
         <span className="g1 mb-3 inline-block h-[4px] w-[60px] rounded-2xl"></span>
 
@@ -168,9 +168,9 @@ const Testimonials = () => {
         centeredSlides={true}
         autoplay={{ delay: 5000, disableOnInteraction: true }}
         breakpoints={{
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-          1280: { slidesPerView: 4 },
+          640: { slidesPerView: 3 },
+          1024: { slidesPerView: 5 },
+          1280: { slidesPerView: 5 },
         }}
         modules={[Pagination, Navigation, Autoplay]}
         className="testimonial-swiper"
@@ -195,7 +195,7 @@ const TestimonialCard = ({ testimonial }) => {
         {
           "shadow-box scale-100 opacity-100": swiperSlide.isActive,
           "scale-90 opacity-60": swiperSlide.isPrev || swiperSlide.isNext,
-          "opacity-0":
+          "opacity-40":
             !swiperSlide.isActive && !swiperSlide.isPrev && !swiperSlide.isNext,
         },
       )}

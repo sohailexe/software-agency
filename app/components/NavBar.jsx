@@ -73,27 +73,28 @@ const NavBar = () => {
         )}
       </AnimatePresence>
 
-        <nav className="hidden md:flex md:space-x-8">
-          <ul className="flex space-x-8">
-            {navItems.map((item) => (
-          <motion.li
-            key={item.href}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 400, damping: 20 }}
-          >
-            <Link
-              href={item.href}
-              className="rounded-md px-4 py-2 font-medium text-gray-700 transition-all duration-300 hover:bg-indigo-50 hover:text-indigo-600"
+      {/* Desktop Navigation Links */}
+      <nav className="hidden md:flex md:space-x-8">
+        <ul className="flex space-x-8">
+          {navItems.map((item) => (
+            <motion.li
+              key={item.href}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={AnimatePresence}
             >
-              {item.label}
-            </Link>
-          </motion.li>
-            ))}
-          </ul>
-        </nav>
+              <Link
+                href={item.href}
+                className="rounded-md px-4 py-2 font-medium text-gray-700 transition-all duration-300 hover:bg-indigo-50 hover:text-indigo-600"
+              >
+                {item.label}
+              </Link>
+            </motion.li>
+          ))}
+        </ul>
+      </nav>
 
-        {/* Contact Button */}
+      {/* Contact Button */}
       <motion.button
         className={clsx(
           "g2 mt-4 w-full rounded-md bg-gradient-to-r px-6 py-3 text-white transition-all duration-300 hover:shadow-lg md:ml-4 md:mt-0 md:w-fit",

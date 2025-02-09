@@ -7,6 +7,8 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import Clients from "./components/Clients";
 import TestimonialCarousel from "./components/Testimonials";
 import Navbar from "./components/NavTest";
+import CaseStudies from "./components/CaseStudies";
+import Procedure from "./components/Procedure";
 config.autoAddCss = false; // Prevent Font Awesome from adding its CSS automatically
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
       <AboutUs />
       <Clients />
       <TestimonialCarousel />
+      <CaseStudies />
+      <Procedure />
       <div className="wrap1 h-96 border py-14 pb-20"></div>
     </>
   );
