@@ -6,11 +6,13 @@ import "@fortawesome/fontawesome-svg-core/styles.css"; // Import the CSS
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Clients from "./components/Clients";
 import TestimonialCarousel from "./components/Testimonials";
+import Navbar from "./components/NavTest";
 config.autoAddCss = false; // Prevent Font Awesome from adding its CSS automatically
 
 export default function Home() {
   return (
     <>
+      {/* <Navbar /> */}
       <NavBar />
       <Hero />
       <Services />
