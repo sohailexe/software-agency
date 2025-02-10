@@ -78,12 +78,10 @@ const DevProcess = () => {
                 <h2>{step.title}</h2>
               </header>
               <p>{step.description}</p>
-              {step.connectorPosition === "bottom" && (
-                <span className="g3 absolute bottom-0 left-0 right-0 mx-auto h-14 w-[2px] translate-y-[100%]">
-                  <div className="relative mx-auto"></div>
-                  <span className="g3 absolute bottom-0 mx-auto size-2 -translate-x-[35%] rounded-full"></span>
-                </span>
-              )}
+              <span className="g3 absolute bottom-0 left-0 right-0 mx-auto h-14 w-[2px] translate-y-[100%]">
+                <div className="relative mx-auto"></div>
+                <span className="g3 absolute bottom-0 mx-auto size-2 -translate-x-[35%] rounded-full"></span>
+              </span>
             </div>
           ))}
         </div>
@@ -104,12 +102,11 @@ const DevProcess = () => {
                 <h2>{step.title}</h2>
               </header>
               <p>{step.description}</p>
-              {step.connectorPosition === "top" && (
-                <span className="g3 absolute left-0 right-0 top-0 mx-auto h-14 w-[2px] -translate-y-[100%]">
-                  <div className="relative mx-auto"></div>
-                  <span className="g3 absolute top-0 mx-auto size-2 -translate-x-[35%] rounded-full"></span>
-                </span>
-              )}
+
+              <span className="g3 absolute left-0 right-0 top-0 mx-auto h-14 w-[2px] -translate-y-[100%]">
+                <div className="relative mx-auto"></div>
+                <span className="g3 absolute top-0 mx-auto size-2 -translate-x-[35%] rounded-full"></span>
+              </span>
             </div>
           ))}
         </div>
