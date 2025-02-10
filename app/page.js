@@ -11,6 +11,8 @@ import CaseStudies from "./components/CaseStudies";
 import Procedure from "./components/Procedure";
 import DevApproach from "./components/DevApproach";
 import TechStack from "./components/TechStack";
+// import FeaturedResources from "./components/FeaturedResources";
+import DevProcess from "./components/DevProcess";
 
 config.autoAddCss = false; // Prevent Font Awesome from adding its CSS automatically
 
@@ -28,6 +30,8 @@ export default function Home() {
       <Procedure />
       <DevApproach />
       <TechStack />
+      <DevProcess />
+      {/* <FeaturedResources /> */}
       <div className="wrap1 h-96 border py-14 pb-20"></div>
     </>
   );

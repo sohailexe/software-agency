@@ -27,7 +27,7 @@ const TechStack = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6 }}
-      className="wrap1 bg-light-200 relative border-t py-20"
+      className="wrap1 bg-light-200 relative border-b border-t py-20"
     >
       <motion.header
         initial={{ opacity: 0 }}
